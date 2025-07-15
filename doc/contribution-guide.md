@@ -1,232 +1,302 @@
-# Contribution Guide
+# Contributing to the Solutions Exchange
 
-Thank you for your interest in contributing to the NHS Wales Solutions Exchange! Your innovations and experiences can help improve healthcare delivery across Wales.
+Thank you for your interest in contributing to the GIG Cymru Solutions Exchange! By sharing your code repositories, you help other NHS Wales organizations benefit from your development work and accelerate digital transformation across Welsh healthcare.
 
 ## How to Contribute
 
-### Submit a Solution
+### Adding Your Repository to the Catalogue
 
-Ready to share your solution with the NHS Wales community? Follow these steps:
+The Solutions Exchange automatically discovers repositories from NHS Wales GitHub Enterprise. To ensure your repository appears in our catalogue:
 
-1. **Prepare Your Documentation**
-2. **Complete the Submission Form**
-3. **Technical Review Process**
-4. **Publication and Promotion**
+1. **Ensure Repository Visibility**: Your repository must be either public or internal (not private)
+2. **Add Descriptive Information**: Provide clear names, descriptions, and documentation
+3. **Use Relevant Topics**: Tag your repository with appropriate healthcare and technical topics
+4. **Follow NHS Wales Standards**: Adhere to organizational coding and security guidelines
 
-## Submission Requirements
+## Repository Requirements
 
 ### Essential Information
 
-Before submitting, ensure you have the following information ready:
+To maximize the value of your repository in the Solutions Exchange:
 
-!!! warning "Required Information"
-    All fields marked with * are mandatory for submission
+!!! info "Required Elements"
+    - Clear and descriptive repository name
+    - Comprehensive README with project description
+    - Appropriate license information
+    - Relevant topic tags and keywords
+    - Documentation for setup and usage
 
-#### Solution Overview
+### Repository Structure
 
-- **Solution Name*** - Clear, descriptive name
-- **Brief Description*** - One paragraph summary
-- **Category*** - Clinical, Administrative, Digital, or Operational
-- **Implementation Status*** - Live, Pilot, Development, or Retired
-- **Organization*** - Your NHS Wales organization
-- **Primary Contact*** - Lead contact for inquiries
+#### Documentation Standards
 
-#### Technical Details
+**README.md Requirements**
 
-- **Technology Stack** - Programming languages, frameworks, databases
-- **System Requirements** - Hardware, software, and infrastructure needs
-- **Integration Points** - Existing systems it connects with
-- **Security Considerations** - Data protection and security measures
-- **Compliance Information** - Relevant standards and certifications
+- **Project Overview**: Clear description of what the software does
+- **Healthcare Context**: Specific use case and target users
+- **Installation Instructions**: Step-by-step setup guide
+- **Usage Examples**: Code samples and practical examples
+- **Configuration Guide**: Environment setup and customization options
+- **Contributing Guidelines**: How others can contribute to the project
 
-#### Business Case
+**Additional Documentation**
 
-- **Problem Statement*** - What challenge does this solve?
-- **Solution Benefits*** - Quantified outcomes where possible
-- **Implementation Effort** - Time, resources, and costs involved
-- **Success Metrics** - How you measure success
-- **Lessons Learned** - Key insights from implementation
+- **API Documentation**: For libraries and services
+- **Deployment Guide**: Production deployment instructions
+- **Security Considerations**: Healthcare-specific security measures
+- **Compliance Information**: Relevant standards and certifications
+- **Troubleshooting Guide**: Common issues and solutions
 
-### Documentation Standards
+#### Code Quality Standards
 
-#### Complete Documentation Package
+**Development Best Practices**
 
-Your submission should include:
+- **Version Control**: Use semantic versioning for releases
+- **Code Comments**: Clear inline documentation
+- **Testing**: Include unit tests and integration tests
+- **Dependencies**: Document all external dependencies
+- **Configuration**: Use environment variables for configuration
+- **Logging**: Implement comprehensive logging for troubleshooting
 
-=== "User Documentation"
+**Healthcare-Specific Considerations**
 
-    - **User Guide** - Step-by-step instructions for end users
-    - **Training Materials** - Resources for user training
-    - **Quick Reference** - Cheat sheets and quick help
-    - **FAQ** - Common questions and answers
+- **Data Privacy**: Ensure no PHI in code or documentation
+- **Security**: Follow NHS Wales cybersecurity guidelines
+- **Compliance**: Document relevant regulatory compliance
+- **Interoperability**: Support healthcare standards (HL7, FHIR, etc.)
+- **Accessibility**: Follow accessibility guidelines for user interfaces
 
-=== "Technical Documentation"
+### Topic Tagging
 
-    - **Architecture Overview** - System design and components
-    - **Installation Guide** - Deployment instructions
-    - **Configuration Manual** - Setup and customization
-    - **API Documentation** - If applicable
-    - **Troubleshooting Guide** - Common issues and solutions
+#### Recommended Topics
 
-=== "Governance Documentation"
+Use relevant topics to improve discoverability:
 
-    - **Risk Assessment** - Clinical and operational risks
-    - **Data Protection Impact Assessment** - If processing personal data
-    - **Clinical Safety Case** - For clinical solutions
-    - **Information Governance Review** - Data handling compliance
+**Healthcare Domains**
+- `healthcare`
+- `fhir`
+- `patient-data`
+- `clinical-decision-support`
+- `population-health`
+- `electronic-health-records`
+- `telemedicine`
+- `patient-portal`
 
-#### Documentation Quality Standards
+**Technical Areas**
+- `api`
+- `dashboard`
+- `analytics`
+- `machine-learning`
+- `automation`
+- `integration`
+- `security`
+- `monitoring`
 
-- ✅ **Clear and Concise** - Easy to understand language
-- ✅ **Well Structured** - Logical organization with headings
-- ✅ **Complete** - All necessary information included
-- ✅ **Current** - Up-to-date and accurate information
-- ✅ **Accessible** - Suitable for various technical skill levels
+**Programming Languages and Frameworks**
+- Language-specific tags (`python`, `javascript`, `r`, etc.)
+- Framework tags (`react`, `django`, `flask`, `shiny`, etc.)
+- Platform tags (`docker`, `kubernetes`, `aws`, `azure`, etc.)
 
-## Review Process
+## Repository Evaluation
 
-### 1. Initial Assessment (5 working days)
+### Automatic Assessment
 
-Our team reviews your submission for:
+The Solutions Exchange automatically evaluates repositories based on:
 
-- Completeness of required information
-- Relevance to NHS Wales priorities
-- Basic quality standards
-- Preliminary categorization
+- **Documentation Quality**: Completeness and clarity of README and docs
+- **Code Activity**: Recent commits and maintenance activity
+- **License Information**: Clear licensing terms
+- **Topic Relevance**: Appropriate healthcare and technical tags
+- **Collaboration Level**: Number of contributors and cross-organization involvement
 
-### 2. Technical Review (10-15 working days)
+### Reuse Readiness Scoring
 
-Expert reviewers assess:
+Repositories receive automatic scoring based on:
 
-- Technical feasibility and architecture
-- Security and compliance considerations
-- Integration compatibility
-- Scalability and sustainability
+**⭐⭐⭐⭐⭐ Production Ready**
+- Comprehensive documentation
+- Active maintenance
+- Clear licensing
+- Deployment guides
+- Security documentation
 
-### 3. Clinical/Operational Review (10-15 working days)
+**⭐⭐⭐⭐ Ready with Documentation**
+- Good documentation
+- Setup instructions
+- Usage examples
+- Some maintenance activity
 
-Clinical and operational experts evaluate:
+**⭐⭐⭐ Beta with Active Development**
+- Basic documentation
+- Under active development
+- Limited deployment guidance
 
-- Clinical safety considerations
-- Operational impact and benefits
-- User experience and workflow fit
-- Change management requirements
+**⭐⭐ Early Development**
+- Minimal documentation
+- Basic functionality
+- Experimental status
 
-### 4. Final Approval and Publication (5 working days)
+**⭐ Proof of Concept**
+- Demonstration code
+- Limited documentation
+- Research or pilot status
 
-Following successful review:
+## Best Practices for Contributors
 
-- Final documentation review and editing
-- Solution categorization and tagging
-- Publication to the Solutions Library
-- Notification to the NHS Wales community
+### Repository Management
 
-## Quality Standards
+#### Naming Conventions
+- Use descriptive, kebab-case names
+- Include healthcare context when relevant
+- Avoid abbreviations that aren't widely understood
+- Example: `patient-appointment-scheduler` not `pas`
 
-### Clinical Safety
+#### Description Guidelines
+- Start with what the software does
+- Include healthcare use case
+- Mention key technologies
+- Keep under 160 characters for discoverability
 
-For solutions that interact with patient care:
+#### README Template
+```markdown
+# Project Name
 
-- **DCB0129 Compliance** - Clinical risk management for health IT systems
-- **DCB0160 Compliance** - Clinical safety case reports
-- **Clinical Governance** - Approval from relevant clinical governance committees
-- **User Training** - Comprehensive training and competency assessment
+Brief description of what this software does and its healthcare context.
 
-### Information Governance
+## Healthcare Use Case
 
-All solutions must demonstrate:
+Specific description of how this solves a healthcare problem.
 
-- **Data Minimization** - Processing only necessary data
-- **Purpose Limitation** - Data used only for stated purposes
-- **Storage Limitation** - Appropriate data retention policies
-- **Security Measures** - Technical and organizational safeguards
-- **Transparency** - Clear privacy notices and user information
+## Features
 
-### Technical Standards
+- Key feature 1
+- Key feature 2
+- Key feature 3
 
-- **Interoperability** - Support for NHS Wales technical standards
-- **Scalability** - Ability to handle organizational growth
-- **Maintainability** - Clear update and support procedures
-- **Backup and Recovery** - Robust data protection measures
-- **Performance** - Acceptable response times and availability
+## Installation
 
-## Support for Contributors
+Step-by-step installation instructions.
+
+## Usage
+
+Examples and usage instructions.
+
+## Configuration
+
+Environment setup and configuration options.
+
+## Contributing
+
+Guidelines for contributing to this project.
+
+## License
+
+License information.
+```
+
+### Security and Compliance
+
+#### Security Considerations
+- Never commit sensitive data (credentials, PHI, etc.)
+- Use environment variables for configuration
+- Document security measures and considerations
+- Follow NHS Wales cybersecurity guidelines
+- Implement appropriate access controls
+
+#### Healthcare Compliance
+- Document relevant regulatory compliance (GDPR, DCB0129, etc.)
+- Include privacy impact assessments where relevant
+- Ensure data handling procedures are documented
+- Follow NHS Wales information governance standards
+
+### Collaboration and Community
+
+#### Encouraging Contributions
+- Provide clear contributing guidelines
+- Use GitHub Issues for feature requests and bugs
+- Respond promptly to questions and contributions
+- Document coding standards and review processes
+- Welcome contributions from other NHS Wales organizations
+
+#### Cross-Organization Collaboration
+- Reach out to similar projects in other health boards
+- Consider merging efforts where appropriate
+- Share lessons learned and best practices
+- Participate in community discussions and events
+
+## Support and Resources
 
 ### Getting Help
 
-Our team is here to support you throughout the contribution process:
+**Repository Best Practices**
+- **Email**: [repository.support@gig.cymru](mailto:repository.support@gig.cymru)
+- **Documentation**: NHS Wales GitHub Enterprise Guidelines
+- **Training**: Monthly repository management workshops
 
-- **Pre-submission Consultation** - Discuss your solution before formal submission
-- **Documentation Support** - Help with preparing submission materials
-- **Technical Guidance** - Advice on technical requirements and standards
-- **Review Process Support** - Assistance during the review phases
+**Technical Guidance**
+- **Security Questions**: [security@gig.cymru](mailto:security@gig.cymru)
+- **Compliance Guidance**: [compliance@gig.cymru](mailto:compliance@gig.cymru)
+- **Platform Issues**: [platform.support@gig.cymru](mailto:platform.support@gig.cymru)
 
-### Contact Information
+### Community Resources
 
-- **Email**: [contributions@solutions.exchange.wales.nhs.uk](mailto:contributions@solutions.exchange.wales.nhs.uk)
-- **Teams**: NHS Wales Solutions Exchange - Contributors
-- **Office Hours**: Monday-Friday, 9:00-17:00
-- **Response Time**: We aim to respond within 2 working days
+**Developer Networks**
+- **GIG Cymru Developer Network**: Monthly virtual meetups
+- **Technical Forums**: GitHub Discussions and Teams channels
+- **Code Review Sessions**: Peer review and best practice sharing
 
-## After Publication
+**Training and Events**
+- **GitHub Enterprise Training**: Getting started with NHS Wales GitHub
+- **Code Collaboration Workshops**: Multi-organization project management
+- **Security and Compliance Training**: Healthcare-specific development guidelines
 
-### Ongoing Responsibilities
+## Recognition and Impact
 
-Once your solution is published, you commit to:
+### Contribution Recognition
 
-- **Responding to Inquiries** - Answer questions from potential implementers
-- **Providing Support** - Offer reasonable implementation support
-- **Maintaining Documentation** - Keep information current and accurate
-- **Sharing Updates** - Inform us of significant changes or improvements
+Active contributors and high-quality repositories receive:
 
-### Recognition and Benefits
+- **Featured Repository Status**: Highlighted on the Solutions Exchange homepage
+- **Community Recognition**: Acknowledgment in NHS Wales developer networks
+- **Speaking Opportunities**: Present at GIG Cymru events and conferences
+- **Collaboration Opportunities**: Connect with other innovative teams
+- **Professional Development**: Showcase expertise and technical leadership
 
-Contributors receive:
+### Impact Tracking
 
-- **Recognition** - Credit on the Solutions Library
-- **Network Access** - Connect with other innovators across NHS Wales
-- **Early Access** - Preview new platform features
-- **Speaking Opportunities** - Present at NHS Wales digital health events
-- **Career Development** - Showcase your innovation expertise
+Monitor your repository's impact through:
 
-## Templates and Resources
-
-### Submission Templates
-
-Download our templates to ensure your submission meets our requirements:
-
-- [Solution Submission Template](templates/solution-submission-template.docx)
-- [Technical Documentation Template](templates/technical-docs-template.docx)
-- [User Guide Template](templates/user-guide-template.docx)
-- [Risk Assessment Template](templates/risk-assessment-template.docx)
-
-### Example Submissions
-
-Learn from successful submissions:
-
-- [Digital Health Passport - Example Submission](examples/digital-health-passport-submission.pdf)
-- [ED Predictive Analytics - Technical Docs](examples/ed-analytics-technical-example.pdf)
-- [Appointment Reminders - Complete Package](examples/appointment-reminders-complete.zip)
+- **Usage Metrics**: Views, clones, and downloads
+- **Collaboration Metrics**: Contributors and cross-organization involvement
+- **Reuse Tracking**: Other repositories that build upon your work
+- **Community Feedback**: Issues, discussions, and pull requests
 
 ## Frequently Asked Questions
 
-??? question "How long does the review process take?"
-    The complete review process typically takes 4-6 weeks from submission to publication, depending on the complexity of your solution and the completeness of your documentation.
+??? question "How do I ensure my repository appears in the Solutions Exchange?"
+    Make sure your repository is public or internal (not private) in NHS Wales GitHub Enterprise. Add clear descriptions, relevant topics, and comprehensive documentation.
 
-??? question "Can I submit a solution that's still in development?"
-    Yes! We welcome solutions at all stages. Clearly mark your solution's development status, and we'll categorize it appropriately. This can help you find collaborators and early adopters.
+??? question "Can I contribute repositories from external GitHub accounts?"
+    The Solutions Exchange only catalogues repositories from NHS Wales GitHub Enterprise to ensure security and compliance standards.
 
-??? question "What if my solution doesn't meet all the requirements?"
-    Don't worry! Our team will work with you to address any gaps. We provide detailed feedback and support to help you meet our standards.
+??? question "How often is the repository data updated?"
+    Repository information is automatically refreshed daily via GitHub API integration, ensuring the catalogue always shows current information.
 
-??? question "Can I update my solution after publication?"
-    Absolutely! We encourage keeping your solutions current. Contact us with updates, and we'll help you maintain your listing.
+??? question "Can I modify how my repository appears in the catalogue?"
+    Yes! Update your repository description, topics, and README to improve how it appears in search results and listings.
 
-??? question "Is there any cost to submit or access solutions?"
-    No, the Solutions Exchange is completely free for all NHS Wales organizations. This is funded as part of our commitment to collaborative innovation.
+??? question "What if my repository contains sensitive healthcare code?"
+    Ensure your repository is marked as internal (not public) and follows NHS Wales security guidelines. Remove any sensitive data or credentials before committing.
+
+??? question "How can I collaborate with other NHS Wales organizations?"
+    Use GitHub Issues and Discussions to connect with potential collaborators. The Solutions Exchange helps identify similar projects across organizations.
 
 ---
 
-Ready to contribute? [Start your submission](mailto:contributions@solutions.exchange.wales.nhs.uk?subject=New%20Solution%20Submission) or [contact our team](mailto:solutions.exchange@wales.nhs.uk) for guidance.
+## Ready to Contribute?
 
-*Together, we can transform healthcare delivery across Wales through shared innovation.*
+Make your code available to the NHS Wales community:
+
+**[Review GitHub Guidelines](https://github.com/NHS-Wales)** | **[Contact Support](mailto:repository.support@gig.cymru)** | **[Join Developer Network](mailto:digital.health@gig.cymru)**
+
+*Together, we can accelerate digital health development through code sharing and collaboration across Wales.*

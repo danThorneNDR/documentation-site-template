@@ -1,6 +1,6 @@
-site_name: GIG Cymru NHS Wales - {Site Name}
-site_url: https://gig-cymru-nhs-wales.github.io/documentation-site-template/
-repo_url: https://github.com/GIG-Cymru-NHS-Wales/documentation-site-template/
+site_name: GIG Cymru Solutions Exchange
+site_url: https://gig-cymru.github.io/solutions-exchange/
+repo_url: https://github.com/GIG-Cymru/solutions-exchange/
 docs_dir: doc
 edit_uri: edit/main/doc/
 extra_css:
@@ -19,7 +19,7 @@ theme:
     - content.action.view
     - content.code.copy
 copyright: >
-  Copyright &copy; 2025 GIG Cymru - NHS Wales –
+  Copyright &copy; 2025 GIG Cymru - Digital Innovation for Welsh Healthcare –
   <a href="#__consent">Change cookie settings</a>
 extra:
   consent:
@@ -57,9 +57,3 @@ plugins:
   - search
   - table-reader
   - awesome-nav
-
-nav:
-  - Home: index.md
-  - Getting Started: getting-started.md
-  - Solutions Library: solutions-library.md
-  - Contribution Guide: contribution-guide.md

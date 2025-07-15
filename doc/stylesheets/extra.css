@@ -1,8 +1,319 @@
-:root  > * {
-    --md-primary-fg-color:        #3f5181;
-    --md-primary-fg-color--light: #3f6981;
-    --md-primary-fg-color--dark:  #cdb280;
-    --md-primary-bg-color:               rgb(234, 234, 234);
-    --md-primary-bg-color--light:        rgb(255, 255, 255);
+/* GIG Cymru Solutions Exchange - Custom Styling */
+
+:root > * {
+    /* GIG Cymru Brand Colors */
+    --md-primary-fg-color:        #003087;  /* NHS Blue */
+    --md-primary-fg-color--light: #0072CE;  /* Light Blue */
+    --md-primary-fg-color--dark:  #002060;  /* Dark Blue */
+    --md-primary-bg-color:        #f8f9fa;  /* Light background */
+    --md-primary-bg-color--light: #ffffff;  /* White */
     
-  }
+    /* GIG Cymru Accent Colors */
+    --gig-green: #00703C;   /* NHS Green */
+    --gig-orange: #FF6900;  /* Accent Orange */
+    --gig-gray: #768692;    /* Text Gray */
+    --gig-light-gray: #E8EDEE;  /* Background Gray */
+}
+
+/* Hero Section Styling */
+.hero-logo {
+    max-width: 200px;
+    margin: 2rem auto;
+    display: block;
+}
+
+/* Featured Repositories Section */
+.featured-repos {
+    margin: 2rem 0;
+}
+
+.featured-repos h3 {
+    color: var(--md-primary-fg-color);
+    border-left: 4px solid var(--gig-green);
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Search and Filter Controls */
+.search-controls {
+    background: var(--gig-light-gray);
+    border-radius: 8px;
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+.search-controls h3 {
+    color: var(--md-primary-fg-color);
+    margin-bottom: 1rem;
+}
+
+/* Repository Grid */
+.repo-grid {
+    display: grid;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.repo-grid > div {
+    background: var(--md-primary-bg-color--light);
+    border: 1px solid var(--gig-light-gray);
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.repo-grid > div:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.repo-grid h3 {
+    color: var(--md-primary-fg-color);
+    margin-bottom: 0.5rem;
+}
+
+/* Repository Metadata */
+.repo-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem 0;
+    font-size: 0.9rem;
+    color: var(--gig-gray);
+}
+
+/* Topic Tags */
+.topics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.topic-tag {
+    background: var(--md-primary-fg-color);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* Reuse Readiness Stars */
+.reuse-stars {
+    color: var(--gig-orange);
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+
+/* Platform Statistics */
+.platform-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.platform-stats li {
+    background: linear-gradient(135deg, var(--md-primary-fg-color), var(--md-primary-fg-color--light));
+    color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+    list-style: none;
+}
+
+/* Action Cards */
+.action-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+    list-style: none;
+    padding: 0;
+}
+
+.action-cards li {
+    background: var(--md-primary-bg-color--light);
+    border: 1px solid var(--gig-light-gray);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.action-cards li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Search Section */
+.search-section {
+    background: var(--gig-light-gray);
+    border-radius: 8px;
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+.search-section h3 {
+    color: var(--md-primary-fg-color);
+    margin-bottom: 1rem;
+}
+
+/* Navigation Cards */
+.nav-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-cards li {
+    background: var(--md-primary-bg-color--light);
+    border: 1px solid var(--gig-light-gray);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    list-style: none;
+}
+
+.nav-cards li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.nav-cards a {
+    color: var(--md-primary-fg-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.nav-cards a:hover {
+    color: var(--md-primary-fg-color--light);
+}
+
+/* Platform Impact Statistics */
+.platform-impact ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+}
+
+.platform-impact li {
+    background: linear-gradient(135deg, var(--md-primary-fg-color), var(--md-primary-fg-color--light));
+    color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Solutions Library Enhancements */
+.solution-card {
+    background: var(--md-primary-bg-color--light);
+    border: 1px solid var(--gig-light-gray);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.solution-status {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-left: 0.5rem;
+}
+
+.status-live {
+    background: #d4edda;
+    color: #155724;
+}
+
+.status-pilot {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.status-development {
+    background: #cce7ff;
+    color: #004085;
+}
+
+/* Custom Button Styling */
+.btn-primary {
+    background: var(--md-primary-fg-color);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    transition: background 0.2s ease;
+}
+
+.btn-primary:hover {
+    background: var(--md-primary-fg-color--dark);
+    color: white;
+}
+
+.btn-secondary {
+    background: var(--gig-green);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    transition: background 0.2s ease;
+}
+
+.btn-secondary:hover {
+    background: #004d2a;
+    color: white;
+}
+
+/* Healthcare-specific styling */
+.clinical-note {
+    background: #f8f9fa;
+    border-left: 4px solid var(--gig-green);
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 0 6px 6px 0;
+}
+
+.security-notice {
+    background: #fff3cd;
+    border: 1px solid #ffeaa7;
+    padding: 1rem;
+    border-radius: 6px;
+    margin: 1rem 0;
+}
+
+/* Footer enhancements */
+.md-footer {
+    background: var(--md-primary-fg-color);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .feature-grid,
+    .nav-cards,
+    .platform-impact ul {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-logo {
+        max-width: 150px;
+    }
+}
